@@ -20,7 +20,7 @@ export default function Hero() {
           backgroundRepeat: "no-repeat",
           backgroundSize: "100% 100%",
           height: "100%",
-          padding: "0 0 30rem 0",
+          padding: "10rem 0 15rem 0",
         }}
       >
         <div className="content" style={{ padding: "2.5rem 0 " }}>
@@ -32,23 +32,23 @@ export default function Hero() {
               marginBottom: "0",
               display: "flex",
               flexDirection: "column",
-              fontSize: "48px",
+              fontSize: "60px",
               color: "black",
               // padding: "5rem 0 0 10px",
             }}
           >
             <span style={{ margin: "0 0 0 30px" }}>Hi,</span>
             <span style={{ margin: "0 0 0 60px" }}>I'm Jahmel,</span>
-            <span style={{ fontSize: "64px", margin: "0 0 0 90px" }}>
+            <span style={{ fontSize: "98px", margin: "0 0 0 90px" }}>
               {`A `}
 
               <Typed
-                strings={["Full-Stack Developer", "Web Designer"]}
+                strings={["Full-Stack Developer", "Web Designer", "Freelancer"]}
                 typeSpeed={150}
                 backSpeed={70}
                 // loop
                 style={{
-                  fontSize: "64px",
+                  fontSize: "98px",
                   fontFamily: "cambo",
                   color: "gainsboro",
                 }}
