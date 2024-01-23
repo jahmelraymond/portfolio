@@ -72,7 +72,7 @@ export default function Navbar() {
               cursor: "pointer",
             }}
           >
-            Skills
+            <a href="#skills" style={{color:'black' ,textDecoration:'none'}}>Skills</a>
           </li>
           <li
             style={{
@@ -83,7 +83,7 @@ export default function Navbar() {
               cursor: "pointer",
             }}
           >
-            Projects
+            <a href="#projects" style={{color:'black' ,textDecoration:'none'}}>Projects</a>
           </li>
           <li
             style={{

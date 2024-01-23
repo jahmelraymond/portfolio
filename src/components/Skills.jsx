@@ -14,10 +14,11 @@ export default function Skills() {
         display: "flex",
         flexDirection: "column",
       }}
+      id='skills'
     >
-      <h1>
+      <h1 style={{ margin: "5rem 0" }}>
         <Typed
-          strings={["Skills / Technologies"]}
+          strings={["Skills/Technologies"]}
           typeSpeed={150}
           backSpeed={70}
           style={{
@@ -25,6 +26,8 @@ export default function Skills() {
             fontWeight: "100",
             padding: "0 35px",
             fontFamily: "Istok Web",
+            margin: "5rem 0",
+            textDecoration: "underline",
           }}
           contentType={"html"}
         />
@@ -42,8 +45,10 @@ export default function Skills() {
       >
         {context.skills.length
           ? context.skills.map((item) => (
-              <div className="skill" style={{ perspective: "1000px" ,                     margin:'0 0 10rem 0'
-            }}>
+              <div
+                className="skill"
+                style={{ perspective: "1000px", margin: "0 0 10rem 0" }}
+              >
                 <div
                   className="skill-card-inner"
                   style={{
@@ -62,7 +67,7 @@ export default function Skills() {
                       alt=""
                       style={{
                         height: "152px",
-                        width: "fit-content",
+                        width: "100%",
                         borderRadius: "10px",
                       }}
                     />
@@ -71,7 +76,9 @@ export default function Skills() {
                     className="skill-card-back"
                     style={{ position: "absolute" }}
                   >
-                    <p style={{ textAlign:'center' , fontSize:'24px'}}>{item.name}</p>
+                    <p style={{ textAlign: "center", fontSize: "24px" }}>
+                      {item.name}
+                    </p>
                   </div>
 
                   {/* <h1>{context.skills.name}</h1> */}
