@@ -16,7 +16,7 @@ export default function Hero() {
       <div
         className="container"
         style={{
-          backgroundImage: `url(${Back})`,
+          //   backgroundImage: `url(${Back})`,
           backgroundRepeat: "no-repeat",
           backgroundSize: "100% 100%",
           height: "100%",
@@ -33,7 +33,7 @@ export default function Hero() {
               display: "flex",
               flexDirection: "column",
               fontSize: "48px",
-              color: "white",
+              color: "black",
               // padding: "5rem 0 0 10px",
             }}
           >
@@ -50,30 +50,41 @@ export default function Hero() {
                 style={{
                   fontSize: "64px",
                   fontFamily: "cambo",
-                  color: "royalblue",
+                  color: "gainsboro",
                 }}
               />
             </span>
           </h1>
+          <p
+            style={{
+              textAlign: "left",
+              fontSize: "40px",
+              margin: "0 0 0 6rem",
+            }}
+          >
+            Freelance web developer proficient in styling languages known as
+            HTML, CSS, & Javascript
+          </p>
         </div>
         <div
           className="links"
           style={{
             width: "100%",
             display: "flex",
-            justifyContent: "center",
+            justifyContent: "flex-start",
             margin: "1rem 0 0 0",
           }}
         >
           <button
             style={{
-              border: "solid 0.5px royalblue",
+              border: "none",
               fontSize: "26px",
               borderRadius: "5px",
               padding: "10px",
               margin: "0 20px 0 0",
               fontFamily: "Istok Web",
-              // color: "royalblue",
+              color: "black",
+              margin: "0 0 0 6rem",
             }}
             onClick={() => setContext((prev) => ({ ...prev, form: true }))}
           >
@@ -87,13 +98,14 @@ export default function Hero() {
               padding: "10px",
               margin: "0 0 0 20px",
               fontFamily: "Istok Web",
-              // color: "royalblue",
+              //   color: "royalblue",
               margin: "0 0 0 10px",
+              display: "none",
             }}
           >
             <a
               style={{
-                color: "royalblue",
+                // color: "royalblue",
                 textDecoration: "none",
                 fontSize: "26px",
               }}
