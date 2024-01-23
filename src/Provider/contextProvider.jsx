@@ -10,6 +10,7 @@ function ContextProvider({ children }) {
     email: "",
     message: "",
     form: false,
+    resume:false,
   });
   return (
       <stateContext.Provider

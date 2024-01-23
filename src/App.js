@@ -11,7 +11,7 @@ function App() {
         <div className="App" style={{ height: "100%" }}>
           <Navbar />
           <Hero />
-          {/* <About /> */}
+          {/* <About />g */}
         </div>
       </BrowserRouter>
     </ContextProvider>
