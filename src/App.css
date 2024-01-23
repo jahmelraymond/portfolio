@@ -21,8 +21,8 @@ button {
   background-color: gainsboro;
   color: royalblue;
 }
-.send{
-  background-color:white;
+.send {
+  background-color: white;
 }
 .send:hover {
   background-color: white;
@@ -35,4 +35,29 @@ button {
   /* box-shadow: 0 5px #666; */
   transform: translateY(4px);
   color: white;
+}
+.skill:hover .skill-card-inner {
+  transform: rotateY(180deg);
+}
+
+.skill-card-front,
+.skill-card-back {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+.skill-front-back {
+  position: relative;
+  transform: perspective(600px) rotateY(0deg);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+.skill-card-back {
+  position: relative;
+  transform: perspective(600px) rotateY(-180deg);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  background-color: royalblue;
 }
