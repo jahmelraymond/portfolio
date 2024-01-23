@@ -7,7 +7,7 @@ export default function About() {
         height: "100%",
         display: "flex",
         flexDirection: "column",
-        padding: "15rem 1rem 15rem 1rem",
+        padding: "5rem 1rem 5rem 1rem",
       }}
     >
       <div className="header">

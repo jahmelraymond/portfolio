@@ -2,6 +2,7 @@ import "./App.css";
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import About from "./components/About";
+import Skills from "./components/Skills";
 import ContextProvider from "./Provider/contextProvider";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 function App() {
@@ -12,6 +13,7 @@ function App() {
           <Navbar />
           <Hero />
           <About />
+          <Skills />
         </div>
       </BrowserRouter>
     </ContextProvider>
