@@ -4,6 +4,7 @@ import Hero from "./components/Hero";
 import About from "./components/About";
 import Skills from "./components/Skills";
 import Projects from './components/Projects'
+import Work from './components/Work'
 import ContextProvider from "./Provider/contextProvider";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 function App() {
@@ -16,6 +17,7 @@ function App() {
           <About />
           <Skills />
           <Projects/>
+          <Work />
         </div>
       </BrowserRouter>
     </ContextProvider>
