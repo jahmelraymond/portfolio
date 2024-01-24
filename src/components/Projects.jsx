@@ -20,7 +20,7 @@ export default function Projects() {
         flexDirection: "column",
         justifyContent: "center",
         textAlign: "center",
-        height: "950px",
+        height: "1250px",
       }}
       id='projects'
     >
