@@ -1,5 +1,7 @@
 import Typed from "react-typed";
+import { useStateContext } from "../Provider/contextProvider";
 export default function About() {
+  const {context , setContext} = useStateContext()
   return (
     <div
       className="container"
@@ -56,6 +58,10 @@ export default function About() {
             color: "black",
             fontFamily:'Istok Web'
           }}
+          onClick={() => setContext(prev => ({
+            ...prev,
+            form:true
+          }))}
         >
           Contact Me
         </button>
@@ -69,7 +75,7 @@ export default function About() {
             fontFamily:'Istok Web'
           }}
         >
-          Projects
+          <a href="#projects" style={{textDecoration:'none' , color:'black'}}>Projects</a>
         </button>
       </div>
     </div>

@@ -94,7 +94,7 @@ export default function Navbar() {
               cursor: "pointer",
             }}
           >
-            Work
+            <a href="#work" style={{color:'black' ,textDecoration:'none'}}>Work</a>
           </li>
           {/* <li onClick={() => nav('https://github.com/jahmelraymond' , {replace : true})}><AiFillGithub /></li>
                 <li  onClick={() => nav('www.linkedin.com/in/jahmel-raymond-a2b0182a8' , {replace : true})}><AiFillLinkedin /> </li> */}
